@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index" />
+    <meta name="robots" content="nocache" />
+    <meta name="robots" content="follow" />
+    <title>La web de Johan</title>
+    <link rel="stylesheet" type="text/css" href="Estilos.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Recursive:wght@600&display=swap"
+        rel="stylesheet">
+    <style>
+        .link {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: red;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        ol {
+            list-style: none;
+        }
+
+        ol li::before {
+            content: counter(li);
+            color: red;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        ol li{
+            counter-increment: li;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="link">
+        <h1 style="text-align: center; color: red; text-size-adjust: 250px;">La web de Johan</h1>
+        <img style="height: 100%; width: 5%; position: absolute; left: 350px; top: 0px"
+            src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/2-laser-eyes-space-cat-riding-rainbow-pizza-random-galaxy.jpg">
+        <img style="height: 100%; width: 5%; position: absolute; right: 350px; top: 0px"
+            src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/2-laser-eyes-space-cat-riding-rainbow-pizza-random-galaxy.jpg">
+        <h3>Menú: </h3>
+        <a class="menu_link" href="file:///C:/Users/TAURET/Desktop/Pro web/Bienvenida.html">Inicio</a>
+        <a class="menu_link" href="file:///C:/Users/TAURET/Desktop/Pro web/Datos biograficos.html">Datos Biográficos</a>
+        <a class="menu_link" href="file:///C:/Users/TAURET/Desktop/Pro web/Experiencia Laboral.html">Experiencia
+            laboral</a>
+        <a class="menu_link" href="file:///C:/Users/TAURET/Desktop/Pro web/Material de interez.html">Material de
+            interés</a>
+    </div>
+    <div class="no-index">
+        <h2>ÍNDICE</h2>
+        <ul>
+            <li><a href="#EL">Experiencia laboral</a>
+                <ul>
+                    <li>
+                        <a href="#DB">Experiencia en BD</a>
+                    </li>
+                    <li>
+                        <a href="#DM">Experiencia en Cloud</a>
+                    </li>
+                    <li>
+                        <a href="#DC">Experiencia en IA</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#EYP">Estudios y preparacion</a>
+                <ul>
+                    <li>
+                        <a href="#EE">Educacion primaria y Bachillerato</a>
+                    </li>
+                    <li>
+                        <a href="#ES">Educacion superior</a>
+                    </li>
+                    <li>
+                        <a href="#CC">Certificaciones</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#PI">Produccion intelectual</a>
+                <ul>
+                    <li>
+                        <a href="#GIT">Mi Github</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#PR">Premios</a>
+                <ul>
+                    <li>
+                        <a href="#vida">Sigo vivo :v</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="seccion_decorada2">
+            <h2 id="EL">→ Experiencia laboral</h2>
+            <h3 id="DB">Experiencia en BD</h3>
+            <ol>
+                <img style="height: 15%; width: 15%;"
+                    src="https://study.com/cimages/videopreview/videopreview-full/dl4oegfq0k.jpg" alt="BD">
+                <li>2 Años compañia aaa</li>
+                <li>2 Años compañia vvv</li>
+                <li>2 Años compañia ccc</li>
+                <li>2 Años compañia bbb</li>
+            </ol>
+            <h3 id="DM">Experiencia en Cloud</h3>
+            <ol>
+                <img style="height: 15%; width: 15%"
+                    src="https://www.marketingddc.com/wp-content/uploads/2019/02/Cloud-computing-nube-1000x500.jpg"
+                    alt="Cloud">
+                <li>2 Años compañia aaa</li>
+                <li>2 Años compañia vvv</li>
+                <li>2 Años compañia ccc</li>
+                <li>2 Años compañia bbb</li>
+            </ol>
+            <h3 id="DC">Experiencia en IA</h3>
+            <ol>
+                <img style="height: 15%; width: 15%"
+                    src="https://www.enter.co/wp-content/uploads/2020/03/21770-1024x768.jpg" alt="IA">
+                <li>2 Años compañia aaa</li>
+                <li>2 Años compañia vvv</li>
+                <li>2 Años compañia ccc</li>
+                <li>2 Años compañia bbb</li>
+            </ol>
+        </div class="seccion_decorada">
+        <div class="seccion_decorada3">
+            <h2 id="EYP">→ Estudios y Preparación</h2>
+            <h3 id="EE">Educación primaria y Bachillerato</h3>
+            <ul>
+                <img style="height: 15%; width: 15%;"
+                    src="https://www.redacademica.edu.co/sites/default/files/Logo%20Sorrento.png" alt="Sorrento">
+                <li>Colegio Sorrento</li>
+            </ul>
+            <h3 id="ES">Educación superior</h3>
+            <ul>
+                <img style="height: 15%; width: 15%;"
+                    src="https://seeklogo.com/images/P/Pontificia_Universidad_Javeriana-logo-20AAC24559-seeklogo.com.png"
+                    alt="Jave">
+                <li>Pontificia universidad Javeriana</li>
+            </ul>
+            <h3 id="CC">Certificaciones</h3>
+            <ul>
+                <img style="height: 15%; width: 15%"
+                    src="https://d3njjcbhbojbot.cloudfront.net/web/images/signature/template-course-cert-small.png"
+                    alt="Certificado">
+                <li>Google</li>
+                <li>Harvard</li>
+            </ul>
+        </div>
+        <div class="seccion_decorada">
+            <h2 id="PI">→ Producción intelectual</h2>
+            <h3 id="GIT">Github</h3>
+            <ul>
+                <img style="height: 15%; width: 15%;"
+                    src="https://miro.medium.com/max/4000/1*J8O2xd9ZqxWr2x6EP4MHmg.png" alt="Github">
+                <a href="https://github.com/Johan-Ortegon-1">Ve a verlo</a>
+            </ul>
+        </div>
+        <div class="seccion_decorada4">
+            <h2 id="PR">→ Premios</h2>
+            <h3 id="vida">Sigo vivo :v</h3>
+            <ul>
+                <img style="height: 15%; width: 15%;" src="https://i.ytimg.com/vi/DSaCBbZyZHE/maxresdefault.jpg"
+                    alt="OK">
+            </ul>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+/* Uso global */
+
+.link {
+    text-align: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0px;
+}
+
+.menu_link {
+    color: black;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.menu_link:hover {
+    color: red;
+}
+
+.desc-text {
+    width: 800px;
+    text-align: justify;
+    margin-top: 200px;
+}
+
+.no-index {
+    margin-top: 200px;
+}
+
+h1, h2, h3 {
+    font-family: 'Recursive', sans-serif;
+    text-decoration: underline #a2d1f2;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*Bienvenida*/
+
+.imagen_bienvenida {
+    border: 5px solid;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+/* Datos Biograficos */
+
+.cabeza_tabla {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(odd) td {
+    background-color: white;
+}
+
+table tr:nth-child(even) td {
+    background-color: #c4fcb3;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    font-family: 'Open Sans Condensed', sans-serif;
+    border: 1px solid #cecfd5;
+    padding: 10px 15px;
+}
+
+/*Experiencia laboral*/
+
+.seccion_decorada {
+    border: 3px solid;
+    background: rgb(223, 223, 223);
+    background: linear-gradient(90deg, rgba(223, 223, 223, 1) 0%, rgba(255, 255, 255, 1) 17%, rgba(0, 31, 184, 1) 100%);
+}
+
+.seccion_decorada2 {
+    border: 3px solid;
+    background: rgb(223, 223, 223);
+    background: linear-gradient(90deg, rgba(223, 223, 223, 1) 0%, rgba(255, 255, 255, 1) 17%, rgba(184, 0, 0, 1) 100%);
+}
+
+.seccion_decorada3 {
+    border: 3px solid;
+    background: rgb(223, 223, 223);
+    background: linear-gradient(90deg, rgba(223, 223, 223, 1) 0%, rgba(255, 255, 255, 1) 17%, rgba(250, 88, 0, 1) 100%);
+}
+
+.seccion_decorada4 {
+    border: 3px solid;
+    background: rgb(223, 223, 223);
+    background: linear-gradient(90deg, rgba(223, 223, 223, 1) 0%, rgba(255, 255, 255, 1) 17%, rgba(92, 0, 250, 1) 100%);
+}
