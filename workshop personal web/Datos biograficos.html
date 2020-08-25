@@ -11,40 +11,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Recursive:wght@600&display=swap"
         rel="stylesheet">
-    <style>
-        .link {
-            text-align: center;
-        }
-
-        table {
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            border: 1px solid #cecfd5;
-            padding: 10px 15px;
-        }
-    </style>
+    <script src="color-desplazamiento-mensaje.js"></script>
 </head>
 
 <body>
-    <div class="link cambio_color">
+    <div class="link">
         <h1 style="text-align: center; color: red; text-size-adjust: 250px;">La web de Johan</h1>
-        <img style="height: 100%; width: 5%; position: absolute; left: 350px; top: 0px"
+        <img class="imagen_bienvenida" style="height: 100%; width: 5%; position: absolute; left: 350px; top: 0px;"
             src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/2-laser-eyes-space-cat-riding-rainbow-pizza-random-galaxy.jpg">
-        <img style="height: 100%; width: 5%; position: absolute; right: 350px; top: 0px"
+        <img class="imagen_bienvenida" style="height: 100%; width: 5%; position: absolute; right: 350px; top: 0px;"
             src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/2-laser-eyes-space-cat-riding-rainbow-pizza-random-galaxy.jpg">
         <h3>Menú: </h3>
-        <a class="menu_link" href="file:///C:/Users/TAURET/Desktop/Pro web/Bienvenida.html">Inicio</a>
-        <a class="menu_link" href="file:///C:/Users/TAURET/Desktop/Pro web/Datos biograficos.html">Datos Biográficos</a>
-        <a class="menu_link" href="file:///C:/Users/TAURET/Desktop/Pro web/Experiencia Laboral.html">Experiencia
-            laboral</a>
-        <a class="menu_link" href="file:///C:/Users/TAURET/Desktop/Pro web/Material de interez.html">Material de
-            interés</a>
+        <a class="menu_link" href="Bienvenida.html">Inicio</a>
+        <a class="menu_link" href="Datos biograficos.html">Datos Biográficos</a>
+        <a class="menu_link" href="Experiencia Laboral.html">Experiencia laboral</a>
+        <a class="menu_link" href="Material de interez.html">Material de interés</a>
+        <a class="menu_link" href="chat.html">Chat</a>
     </div>
 
-    <div class="no-index cambio_color">
+    <div class="no-index">
         <h2>ÍNDICE</h2>
         <ol>
             <li>
@@ -57,8 +42,8 @@
                 <a href="#DC">Datos de contacto</a>
             </li>
         </ol>
-        <div class="cambio_color">
-            <h2 id="DB">Datos biográficos</h2>
+        <div class="cambio_color" onmouseenter="changeColor(this)">
+            <h2 id="DB" class="anchor">Datos biográficos</h2>
             <table>
                 <caption>Tabla 1. Datos biográficos</caption>
                 <th class="cabeza_tabla" scope="col">Característica</th>
@@ -82,8 +67,8 @@
             </table>
         </div>
 
-        <div class="cambio_color">
-            <h2 id="DM">Datos de la mascota</h2>
+        <div class="cambio_color" onmouseenter="changeColor(this)">
+            <h2 id="DM" class="anchor">Datos de la mascota</h2>
             <img style="height: 15%; width: 15%;"
                 src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59c4f5655bafe82c692a7052/gato-marron_0.jpg"
                 alt="Dato uwu">
@@ -110,8 +95,8 @@
             </table>
         </div>
 
-        <div class="cambio_color">
-            <h2 id="DC">Datos de contacto</h2>
+        <div class="cambio_color" onmouseenter="changeColor(this)">
+            <h2 id="DC" class="anchor">Datos de contacto</h2>
             <table>
                 <caption>Tabla 3. Datos de contacto</caption>
                 <th class="cabeza_tabla" scope="col">Característica</th>

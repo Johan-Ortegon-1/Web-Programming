@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--https://www.youtube.com/watch?v=Ndo2la9hylw-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="robots" content="index" />
+    <meta name="robots" content="nocache" />
+    <meta name="robots" content="follow" />
+    <title>La web de Johan</title>
+    <link rel="stylesheet" type="text/css" href="Estilos.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Recursive:wght@600&display=swap"
+        rel="stylesheet">
+    <script src="color-desplazamiento-mensaje.js"></script>
+</head>
+
+<body>
+    <div class="link">
+        <h1 style="text-align: center; color: red; text-size-adjust: 250px;">La web de Johan</h1>
+        <img class="imagen_bienvenida" style="height: 100%; width: 5%; position: absolute; left: 350px; top: 0px;"
+            src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/2-laser-eyes-space-cat-riding-rainbow-pizza-random-galaxy.jpg">
+        <img class="imagen_bienvenida" style="height: 100%; width: 5%; position: absolute; right: 350px; top: 0px;"
+            src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/2-laser-eyes-space-cat-riding-rainbow-pizza-random-galaxy.jpg">
+        <h3>Menú: </h3>
+        <a class="menu_link" href="Bienvenida.html">Inicio</a>
+        <a class="menu_link" href="Datos biograficos.html">Datos Biográficos</a>
+        <a class="menu_link" href="Experiencia Laboral.html">Experiencia laboral</a>
+        <a class="menu_link" href="Material de interez.html">Material de interés</a>
+        <a class="menu_link" href="chat.html">Chat</a>
+    </div>
+    <div class=" no-index">
+        <div class="seccion_decorada4" onmouseenter="changeColor(this)">
+            <form class="chat">
+                <div>
+                    <label for="txtnombre">Nombre</label>
+                    <input type="text" name="nombre" id="txtNombre">
+                </div>
+                <div>
+                    <label for="txtnombre">Contenido del mensaje:</label>
+                </div>
+                <div>
+                    <textarea name="Contenido" rows="10" cols="50" id="txtMss"></textarea>
+                </div>
+                <button name="Enviar" value="Enviar">Enviar mensaje</button>
+            </form>
+            <div class="chat">
+                <div>
+                    <label for="txtnombre">Historial de mensajes:</label>
+                </div>
+                <div>
+                    <textarea name="Historial" rows="10" cols="50" id="txtHist"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
