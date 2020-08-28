@@ -15,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Recursive:wght@600&display=swap"
         rel="stylesheet">
     <script src="color-desplazamiento-mensaje.js"></script>
+    <script src="chat.js"></script>
 </head>
 
 <body>
@@ -33,18 +34,20 @@
     </div>
     <div class=" no-index">
         <div class="seccion_decorada4" onmouseenter="changeColor(this)">
-            <form class="chat">
+            <form id="form_chat" class="chat" action="javascript:myFunction(); return false;">
                 <div>
                     <label for="txtnombre">Nombre</label>
                     <input type="text" name="nombre" id="txtNombre">
+                    <span style="color:white; background-color: red; visibility: hidden;" id="error1">El Nombre no puede estar vacío.</span>
                 </div>
                 <div>
                     <label for="txtnombre">Contenido del mensaje:</label>
                 </div>
-                <div>
+                <div style="width: 900px;">
                     <textarea name="Contenido" rows="10" cols="50" id="txtMss"></textarea>
+                    <span style="color:white; background-color: red; visibility: hidden;" id="error2">El Mensaje no puede estar vacío ni superar los 300 caracteres.</span>
                 </div>
-                <button name="Enviar" value="Enviar">Enviar mensaje</button>
+                <button name="Enviar" value="Enviar" onclick="mandarHistorial()">Enviar mensaje</button>
             </form>
             <div class="chat">
                 <div>
