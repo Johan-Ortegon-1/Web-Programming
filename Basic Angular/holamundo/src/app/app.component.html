@@ -1,0 +1,44 @@
+<h1>Mi aplicacion se llama {{title}}</h1>
+<p>{{parrafo}}</p>
+
+<h3>PRINTS AND CYCLES</h3>
+
+<p>Dynamic print</p>
+<p *ngFor="let person of personas">{{person}}</p>
+
+<p>List print:</p>
+<ul>
+    <li *ngFor="let person of personas">{{person}}</li>
+</ul>
+
+<h3>EVENTS AND BUTTOMS</h3>
+
+<button (click)="onClickButtom()">Click here!</button>
+<p>{{mensaje}}</p>
+
+<h3>FORMS</h3>
+
+<div>
+    <form (ngSubmit)="processName()">
+        <label for="txtNombre">Nombre:</label>
+        <input 
+            id = "txtNombre" 
+            type = "text" 
+            name = "nombre"
+            [(ngModel)] = "nombre"
+        >
+        <input 
+            id = "txtNombre2" 
+            type = "text" 
+            name = "nombre2"
+            [(ngModel)] = "nombre"
+        >
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+<p>{{nombre}}</p>
+
+<div [hidden]="!formularioenviado"> 
+    El Formulario a sido enviado....
+</div>
