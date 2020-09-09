@@ -1,0 +1,16 @@
+<div>
+  <form (ngSubmit)="enviarMensaje()">
+    <label for="txtMesaje">Mensaje: </label>
+    <input
+      id="txtMensaje"
+      type="text"
+      name="mensaje"
+      [(ngModel)] = "mensaje"
+    > 
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+<div>
+  <p *ngFor="let me of mensajes">{{me}}</p>
+</div>
