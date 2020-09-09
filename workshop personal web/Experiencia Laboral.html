@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Recursive:wght@600&display=swap"
         rel="stylesheet">
+    <script src="color-desplazamiento-mensaje.js"></script>
     <style>
         .link {
             text-align: center;
@@ -28,6 +29,7 @@
             width: 1em;
             margin-left: -1em;
         }
+
         ol {
             list-style: none;
         }
@@ -40,7 +42,8 @@
             width: 1em;
             margin-left: -1em;
         }
-        ol li{
+
+        ol li {
             counter-increment: li;
         }
     </style>
@@ -49,17 +52,16 @@
 <body>
     <div class="link">
         <h1 style="text-align: center; color: red; text-size-adjust: 250px;">La web de Johan</h1>
-        <img style="height: 100%; width: 5%; position: absolute; left: 350px; top: 0px"
+        <img class="imagen_bienvenida" style="height: 100%; width: 5%; position: absolute; left: 350px; top: 0px;"
             src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/2-laser-eyes-space-cat-riding-rainbow-pizza-random-galaxy.jpg">
-        <img style="height: 100%; width: 5%; position: absolute; right: 350px; top: 0px"
+        <img class="imagen_bienvenida" style="height: 100%; width: 5%; position: absolute; right: 350px; top: 0px;"
             src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/2-laser-eyes-space-cat-riding-rainbow-pizza-random-galaxy.jpg">
         <h3>Menú: </h3>
-        <a class="menu_link" href="file:///C:/Users/TAURET/Desktop/Pro web/Bienvenida.html">Inicio</a>
-        <a class="menu_link" href="file:///C:/Users/TAURET/Desktop/Pro web/Datos biograficos.html">Datos Biográficos</a>
-        <a class="menu_link" href="file:///C:/Users/TAURET/Desktop/Pro web/Experiencia Laboral.html">Experiencia
-            laboral</a>
-        <a class="menu_link" href="file:///C:/Users/TAURET/Desktop/Pro web/Material de interez.html">Material de
-            interés</a>
+        <a class="menu_link" href="Bienvenida.html">Inicio</a>
+        <a class="menu_link" href="Datos biograficos.html">Datos Biográficos</a>
+        <a class="menu_link" href="Experiencia Laboral.html">Experiencia laboral</a>
+        <a class="menu_link" href="Material de interez.html">Material de interés</a>
+        <a class="menu_link" href="chat.html">Chat</a>
     </div>
     <div class="no-index">
         <h2>ÍNDICE</h2>
@@ -106,9 +108,9 @@
             </li>
         </ul>
 
-        <div class="seccion_decorada2">
-            <h2 id="EL">→ Experiencia laboral</h2>
-            <h3 id="DB">Experiencia en BD</h3>
+        <div class="seccion_decorada2" onmouseenter="changeColor(this)">
+            <h2 id="EL" class="anchor">→ Experiencia laboral</h2>
+            <h3 id="DB" class="anchor">Experiencia en BD</h3>
             <ol>
                 <img style="height: 15%; width: 15%;"
                     src="https://study.com/cimages/videopreview/videopreview-full/dl4oegfq0k.jpg" alt="BD">
@@ -117,7 +119,7 @@
                 <li>2 Años compañia ccc</li>
                 <li>2 Años compañia bbb</li>
             </ol>
-            <h3 id="DM">Experiencia en Cloud</h3>
+            <h3 id="DM" class="anchor">Experiencia en Cloud</h3>
             <ol>
                 <img style="height: 15%; width: 15%"
                     src="https://www.marketingddc.com/wp-content/uploads/2019/02/Cloud-computing-nube-1000x500.jpg"
@@ -127,7 +129,7 @@
                 <li>2 Años compañia ccc</li>
                 <li>2 Años compañia bbb</li>
             </ol>
-            <h3 id="DC">Experiencia en IA</h3>
+            <h3 id="DC" class="anchor">Experiencia en IA</h3>
             <ol>
                 <img style="height: 15%; width: 15%"
                     src="https://www.enter.co/wp-content/uploads/2020/03/21770-1024x768.jpg" alt="IA">
@@ -136,23 +138,24 @@
                 <li>2 Años compañia ccc</li>
                 <li>2 Años compañia bbb</li>
             </ol>
-        </div class="seccion_decorada">
-        <div class="seccion_decorada3">
-            <h2 id="EYP">→ Estudios y Preparación</h2>
-            <h3 id="EE">Educación primaria y Bachillerato</h3>
+        </div>
+
+        <div class="seccion_decorada3" onmouseenter="changeColor(this)">
+            <h2 id="EYP" class="anchor">→ Estudios y Preparación</h2>
+            <h3 id="EE" class="anchor">Educación primaria y Bachillerato</h3>
             <ul>
                 <img style="height: 15%; width: 15%;"
                     src="https://www.redacademica.edu.co/sites/default/files/Logo%20Sorrento.png" alt="Sorrento">
                 <li>Colegio Sorrento</li>
             </ul>
-            <h3 id="ES">Educación superior</h3>
+            <h3 id="ES" class="anchor">Educación superior</h3>
             <ul>
                 <img style="height: 15%; width: 15%;"
                     src="https://seeklogo.com/images/P/Pontificia_Universidad_Javeriana-logo-20AAC24559-seeklogo.com.png"
                     alt="Jave">
                 <li>Pontificia universidad Javeriana</li>
             </ul>
-            <h3 id="CC">Certificaciones</h3>
+            <h3 id="CC" class="anchor">Certificaciones</h3>
             <ul>
                 <img style="height: 15%; width: 15%"
                     src="https://d3njjcbhbojbot.cloudfront.net/web/images/signature/template-course-cert-small.png"
@@ -161,18 +164,18 @@
                 <li>Harvard</li>
             </ul>
         </div>
-        <div class="seccion_decorada">
-            <h2 id="PI">→ Producción intelectual</h2>
-            <h3 id="GIT">Github</h3>
+        <div class="seccion_decorada" onmouseenter="changeColor(this)">
+            <h2 id="PI" class="anchor">→ Producción intelectual</h2>
+            <h3 id="GIT" class="anchor">Github</h3>
             <ul>
                 <img style="height: 15%; width: 15%;"
                     src="https://miro.medium.com/max/4000/1*J8O2xd9ZqxWr2x6EP4MHmg.png" alt="Github">
                 <a href="https://github.com/Johan-Ortegon-1">Ve a verlo</a>
             </ul>
         </div>
-        <div class="seccion_decorada4">
-            <h2 id="PR">→ Premios</h2>
-            <h3 id="vida">Sigo vivo :v</h3>
+        <div class="seccion_decorada4" onmouseenter="changeColor(this)">
+            <h2 id="PR" class="anchor">→ Premios</h2>
+            <h3 id="vida" class="anchor">Sigo vivo :v</h3>
             <ul>
                 <img style="height: 15%; width: 15%;" src="https://i.ytimg.com/vi/DSaCBbZyZHE/maxresdefault.jpg"
                     alt="OK">

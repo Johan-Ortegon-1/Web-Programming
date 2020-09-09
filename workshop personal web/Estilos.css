@@ -1,5 +1,10 @@
 /* Uso global */
-
+html {
+    scroll-behavior: smooth;
+}
+.anchor {
+    scroll-margin-top: 150px;
+}
 .link {
     text-align: center;
     position: fixed;
@@ -19,9 +24,21 @@
 }
 
 .desc-text {
-    width: 800px;
     text-align: justify;
     margin-top: 200px;
+    background-size: cover;
+}
+
+.cambio_color{
+    border: 3px solid;
+    background: rgb(223, 223, 223);
+    background: linear-gradient(90deg, rgba(223, 223, 223, 1) 0%, rgba(255, 255, 255, 1) 17%, rgba(0, 31, 184, 1) 100%);
+}
+.cambio_color2{
+    border: 3px solid;
+    border-color: #0F51EE;
+    background: rgb(223, 223, 223);
+    background: linear-gradient(90deg, rgba(223, 223, 223, 1) 0%, rgba(255, 255, 255, 1) 17%, rgb(3, 165, 12) 100%);
 }
 
 .no-index {
@@ -94,4 +111,9 @@ th, td {
     border: 3px solid;
     background: rgb(223, 223, 223);
     background: linear-gradient(90deg, rgba(223, 223, 223, 1) 0%, rgba(255, 255, 255, 1) 17%, rgba(92, 0, 250, 1) 100%);
+}
+/*Chat*/
+.chat{
+    margin: auto;
+    width: 25%;
 }
