@@ -1,16 +1,24 @@
 <div>
   <form (ngSubmit)="enviarMensaje()">
+    <label for="txtMesaje">Remitente: </label>
+    <input
+      id="txtRemitente"
+      type="text"
+      name="remitente"
+      [(ngModel)] = "mensaje.remitente"
+    > 
     <label for="txtMesaje">Mensaje: </label>
     <input
       id="txtMensaje"
       type="text"
       name="mensaje"
-      [(ngModel)] = "mensaje"
+      [(ngModel)] = "mensaje.texto"
     > 
 
     <button type="submit">Enviar</button>
   </form>
 </div>
 <div>
-  <p *ngFor="let me of mensajes">{{me}}</p>
+  <p *ngFor="let me of mensajesDeServicio">{{me.remitente}}--{{me.texto}}</p>
+  <p>Hi, I am here!</p>
 </div>

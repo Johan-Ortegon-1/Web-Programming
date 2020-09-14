@@ -1,0 +1,11 @@
+<p>person-list works!</p>
+<div>
+    <button (click)="loadPersons()">Load Persons</button>
+    <ul>
+        <li *ngFor="let person of persons" (click)="selectPerson(person)">{{person.id}} -- {{person.name}}</li>
+    </ul>
+</div>
+<div>
+    <app-person-view [person]= "selectedPerson"(personDeleted)="deletedPerson($event)"></app-person-view>
+    {{ mensaje }}
+</div>
