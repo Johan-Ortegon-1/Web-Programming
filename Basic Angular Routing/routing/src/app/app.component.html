@@ -1,0 +1,8 @@
+<h1>Person app</h1>
+<ul *ngIf="true">
+  <li><a [routerLink]="['/person/list']">Person list</a></li>
+  <li><a [routerLink]="['/person/view']">Person view</a></li>
+</ul>
+<div>
+  <router-outlet></router-outlet>
+</div>

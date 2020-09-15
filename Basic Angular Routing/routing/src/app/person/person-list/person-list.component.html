@@ -1,0 +1,8 @@
+<p>person-list works!</p>
+<div>
+    <ul>
+        <li *ngFor="let person of persons" (click)="selectPerson(person)">
+            <a [routerLink]="['/person/view', person.id]">{{person.id}} -- {{person.name}}</a>
+        </li>
+    </ul>
+</div>
