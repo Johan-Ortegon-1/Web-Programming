@@ -1,0 +1,10 @@
+<h1>Foro app</h1>
+<ul *ngIf="true">
+    <li><a [routerLink]="['/foro/foro-list']">Foro list</a></li>
+    <li><a [routerLink]="['/foro/foro-view']">Foro view</a></li>
+    <li><a [routerLink]="['/foro/foro-view/']">Foro view 2</a></li>
+    <li><a [routerLink]="['/foro/foro-view', 0]">Foro view 2 param</a></li>
+</ul>
+<div>
+    <router-outlet></router-outlet>
+</div>

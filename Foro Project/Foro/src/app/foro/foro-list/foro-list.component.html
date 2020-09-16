@@ -1,0 +1,8 @@
+<p>foro-list works!</p>
+<div>
+    <ul>
+        <li *ngFor="let foro of foros" (click)="selectForo(foro)">
+            <a [routerLink]="['/foro/foro-view', foro.id]">{{foro.id}} -- {{foro.nombre}}</a>
+        </li>
+    </ul>
+</div>
